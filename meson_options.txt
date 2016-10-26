@@ -1,0 +1,8 @@
+option('SOURCE_DATE_EPOCH', type: 'string',  value: '0',
+       description: 'The nominal build time of Sich, as a positive integer number of seconds since the Epoch, or "now".')
+option('GTEST_PATH',        type: 'string',  value: '',
+       description: 'A path to a Git checkout of Google Tests. If this is not provided, but 3rdparty/googletest contains or points to GoogleTest\'s source code, that will be used.')
+option('BUILD_TESTS',       type: 'boolean', value: true,
+       description: 'Whether or not to build the tests.')
+option('BUILD_PERFS',       type: 'boolean', value: true,
+       description: 'Whether or not to build the performance benchmarks.')
